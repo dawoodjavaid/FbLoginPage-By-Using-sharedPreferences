@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#CD132166"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Facebook"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="55dp"
+            android:textStyle="bold"
+            android:textColor="#eee"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/UserNameED"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone number or email address"
+            android:textSize="20sp"
+            android:background="#eee"
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:textColor="#0A0A0A"
+            />
+
+        <EditText
+            android:id="@+id/PassED"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textSize="20sp"
+            android:background="#eee"
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:textColor="#0A0A0A"
+            />
+
+        <Button
+            android:id="@+id/LogIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Log In"
+            android:textColor="#eee"
+            android:background="#480E1D69"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/PasswordRemember_CB"/>
+
+            <TextView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember Password"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ForgetPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password"
+            android:textColor="#eee"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/SignUp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up for Facebook"
+        android:textColor="#eee"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>
